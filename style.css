@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Muli, sans-serif;
+
+}
+
+#page-nav label, #hamburger{
+    display: none;
+  }
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+ul li a{
+    color: gray;
+}
+
+header h3{
+    margin: 0.8rem;
+    color:rgb(12, 12, 59);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    position: sticky;
+    top: 0;
+}
+
+header ul{
+    margin-left: 0.5rem;
+    padding: 1rem;
+}
+
+header ul li{
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.oval{
+    min-width: 50px;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    justify-self: center;
+}
+
+
+.grid-parent{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    background: white;
+}
+
+.grid-parent > div{
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+.slack img{
+    max-width: 50px;
+    min-width: 10px;
+    height: auto;
+}
+
+
+.blue-card{
+    background-color: rgb(110, 202, 238);
+    grid-column-start: 1;
+    grid-column-end:4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    color: rgb(0, 0, 0);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-tap-highlight-color: transparent;
+    background:linear-gradient(to left, rgb(157, 162, 250), rgb(191, 194, 252) 80%)
+}
+
+.grid-card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    background-image: url(./images/Oval_oxhoyi.svg);
+    background-repeat: no-repeat ;
+    background-size: 470px;
+    background-position: center;
+    margin-top: 3rem;
+}
+
+.grid-card > div{
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.item1 ul li{
+    display: inline-block;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start:1 ;
+    background: white;
+    grid-row-end: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item1 ul li{
+    margin: 0.8rem;
+}
+
+.subitem1{
+    margin: 5px;
+}
+
+.subitem1 button{
+    background-color:rgb(159, 117, 255) ;
+    color: white;
+    text-align: center;
+    padding: 17px;
+    cursor: pointer;
+    margin-right: 2rem;
+    font-size: 1rem;
+}
+
+#bell{
+    margin-right: 20px;
+}
+
+#profile{
+    max-width: 40px;
+    border-radius: 50%;
+    min-width: 10px;
+    height: 40px;
+}
+
+.item2{
+    grid-row-start:2 ;
+    grid-row-end: 4;
+    background: black;
+    color: white;
+    text-align: center;
+    padding-top: 4rem;
+}
+.item2 button{
+    background:rgb(159, 117, 255) ;
+    color: white;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+
+.item3{
+    background: white;
+}
+.item4{
+    background: white;
+}
+
+.item5{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin: 10px;
+    background: white;
+}
+
+.item4 button{
+    float: right;
+    /* margin-top: -4rem; */
+    margin-right: 1rem;
+    background: rgb(22, 22, 22);
+    color: white;
+}
+
+.blue-card h3{
+    float: right;
+    color: white;
+}
+
+.buttons{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3; 
+}
+
+.buttons button{
+    color: rgb(172, 167, 167);
+}
+.color-palette{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: center;
+    grid-row-start: 3;
+    grid-row-end: auto;
+    background: rgb(221, 245, 255); 
+}
+
+.color-palette h5{
+    color:rgb(172, 167, 167) ;
+}
+
+.sub-colors{
+    display: flex;
+    justify-content: center;
+    
+}
+.sub-colors button:hover{
+    border: 1px solid rgb(155, 24, 24);
+}
+
+button{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 3px 3px 3px 3px;
+    border: none;
+}
+
+.even button{
+    display: block;
+    background: white;
+    border-radius: 20px;
+}
+
+.odd button{
+    display: block;
+    background: white;
+    border-radius: 20px;
+}
+.slack{
+    border: 1px solid gray;
+    /* margin-left: 8rem; */
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+}
+
+.slack h3{
+    font-size: 1rem;
+}
+
+.slack h5{
+    font-size: 0.7rem;
+    padding-top: 5px;
+    color: gray;
+}
+
+.download button{
+    background-image: linear-gradient(to right, #68E4BC 0%, #4AD0D1 99%);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 11px 15px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 12px 12px -11px #0db4afb8;
+    background-size: 200% auto;
+}
+.download button:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.download h4{
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.get-inspired{
+    float: right;
+    background: pink;
+    /* position: fixed; */
+    color: white;
+    padding: 15px 23px 15px 23px;
+    right: 0;
+    margin-right: 2rem;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    box-shadow: 0 12px 12px -11px rgba(240,115,200,0.73);
+    background-size: 200% auto
+}
+.get-inspired:hover{
+    background: rgb(235, 76, 129);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    background: white;
+    position: sticky;
+    padding-bottom: -2rem;
+    bottom: 0;  
+    border-top: 1px solid rgb(196, 189, 189);
+    margin-right: 10px;
+    color: #e2d2d2;  
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 8px;
+}
+
+footer i{
+    font-size: 2rem;
+    padding: 5px;
+}
+footer h4{
+    font-size: 0.7rem;
+}
